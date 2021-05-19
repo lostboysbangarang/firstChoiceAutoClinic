@@ -1,0 +1,61 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+}
+html input:focus, html textarea:focus, html select:focus, body input:focus, body textarea:focus, body select:focus {
+  outline: none;
+}
+html a, body a {
+  text-decoration: none;
+}
+
+.sticky {
+  z-index: 10;
+}
+.sticky_logo {
+  margin-top: -0.1vw;
+}
+.sticky_logo img {
+  height: 8.3333333333vw;
+  margin-left: 11.9791666667vw;
+}
+.sticky_menu ul {
+  list-style: none;
+  display: flex;
+  margin-top: -7.5vw;
+  margin-left: 31.7708333333vw;
+}
+.sticky_menu ul li {
+  font-family: Clo;
+  color: white;
+  font-size: 1.5vw;
+  background-color: #0570B8;
+  display: flex;
+  width: 11.1458333333vw;
+  height: 2.9166666667vw;
+  margin-right: 1.5625vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  height: 52.03125vw;
+  width: 100vw;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+.intro_poly {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 52.03125vw;
+  clip-path: polygon(0% 0%, 79.9583333333% 0%, 25% 100%, 0% 100%);
+}
+
+/*# sourceMappingURL=style.css.map */

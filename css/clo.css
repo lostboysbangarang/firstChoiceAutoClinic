@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Clo';
+    src:url('CLoisterOpti-Black.ttf.woff') format('woff'),
+        url('CLoisterOpti-Black.ttf.svg#CLoisterOpti-Black') format('svg'),
+        url('CLoisterOpti-Black.ttf.eot'),
+        url('CLoisterOpti-Black.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
