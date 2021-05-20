@@ -105,4 +105,11 @@ html,body {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    &_metal {
+        height: 52.03125vw;
+        margin-top: -52.03125vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../resources/metal.png);
+    }
 }
