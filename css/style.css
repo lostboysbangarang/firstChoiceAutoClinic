@@ -1,3 +1,13 @@
+@keyframes slideShow {
+  0% {
+    opacity: 1;
+    transform: translate3d(100vw, 0vw, 0vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0vw, 0vw, 0vw);
+  }
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -54,8 +64,19 @@ html a, body a {
 }
 .intro_poly {
   background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 10;
   height: 52.03125vw;
   clip-path: polygon(0% 0%, 79.9583333333% 0%, 25% 100%, 0% 100%);
+}
+.intro_slides {
+  height: 52.03125vw;
+  margin-top: -52.03125vw;
+  position: relative;
+  z-index: 9;
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

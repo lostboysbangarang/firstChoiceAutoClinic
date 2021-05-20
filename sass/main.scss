@@ -6,6 +6,21 @@ $blue: #0570B8;
 
 
 
+@keyframes slideShow {
+    0% {
+        opacity: 1;
+        transform: translateX(100vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+}
+
+
+
+
+
 
 html,body {
     width: 100%;
@@ -73,8 +88,21 @@ html,body {
     left: 0;
     &_poly {
         background-color: $ShadowPoly;
+        position: relative;
+        z-index: 10;
         height: 52.03125vw;
         clip-path: polygon(0% 0%, 79.958333333333333333333333333333% 0%, 25% 100%, 0% 100%);
         
+    }
+    &_slides {
+        // background-image: url(../resources/slideshow/1.png);
+        height: 52.03125vw;
+        margin-top: -52.03125vw;
+        // margin-left: 50vw;
+        position: relative;
+        z-index: 9;
+        opacity: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }

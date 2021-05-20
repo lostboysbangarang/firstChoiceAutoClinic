@@ -6,6 +6,13 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+        <script data-main="js/scripts" src="js/require.js"></script>
+
+        <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
+
+        
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/clo.css" type="text/css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-yJpxAFV0Ip/w63YkZfDWDTU6re/Oc3ZiVqMa97pi8uPt92y0wzeK3UFM2yQRhEom" crossorigin="anonymous">
@@ -37,9 +44,9 @@
     </div>
 <body>
     <div class="intro">
-        <div class="intro_poly">
+        <div class="intro_poly" id="polyShadow">
         </div>
-        <div class="intro_slides" id="slide">
+        <div class="intro_slides" id="slide" data-anime="slideShow" data-ease="ease-out" data-time="3.800" data-delay="3.200">
 
         </div>
     </div>
