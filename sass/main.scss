@@ -8,8 +8,8 @@ $blue: #0570B8;
 
 @keyframes slideShow {
     0% {
-        opacity: 1;
-        transform: translateX(100vw);
+        opacity: 0;
+        transform: translateX(-100vw);
     }
     100% {
         opacity: 1;
@@ -101,7 +101,7 @@ html,body {
         // margin-left: 50vw;
         position: relative;
         z-index: 9;
-        opacity: 1;
+        // opacity: 1;
         background-size: cover;
         background-repeat: no-repeat;
     }
