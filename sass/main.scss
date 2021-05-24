@@ -30,6 +30,7 @@ html,body {
     margin: 0px;
     padding: 0px;
     // font-family: 'Montserrat', serif;
+    font-family: 'Spectral', serif;
     font-weight: 400;
     // color: $text;
     input:focus, textarea:focus, select:focus {
@@ -118,7 +119,69 @@ html,body {
 .section1 {
     // height: 33.75vw;
     height: 50vw;
+    width: 100vw;
     background-image: url(../resources/metal.png);
-    margin-top: 50vw;
+    margin-top: 48vw;
     background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    &_spacer{
+        height: 10vw;
+        background-color: white;
+        position: relative;
+        z-index: 20;
+    }
+    &_tris {
+        top: 10vw;
+        height: 33vw;
+        width: 30vw;
+        // margin-top: 10vw;
+        border: solid $blue 3px;
+        color: white;
+        & h1 {
+            height: 1vw;
+            text-align: center;
+            // background-color: yellowgreen;
+        } 
+        &.left {
+            display: flex;
+            margin-top: 10vw;
+            flex-direction: column;
+            // background-color: #ffffff;
+            justify-content: space-between;
+            &_top {
+                border: solid red 2px;
+                flex-basis: 1vw;
+                // background-color: white;
+                
+                margin-bottom: 3vw;
+                &_text {
+                    flex-basis: 1vw;
+                    margin-top: 2.5vw;
+                    height: 1.5vw;
+                    text-align: center;
+                    font-size: 1vw;
+                    vertical-align: middle;
+                    // background-color: yellowgreen;
+                }
+            }
+            &_bottom {
+                border: solid red 2px;
+                background-image: url(../resources/triangles/1.webp);
+                background-size: cover;
+                clip-path: polygon(100% 0%, 0% 0%, 50% 100%);
+            }
+        }
+        &.mid {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            
+        }
+        &.right {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+    }
 }

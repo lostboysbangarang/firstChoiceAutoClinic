@@ -15,6 +15,7 @@ html, body {
   overflow-x: hidden;
   margin: 0px;
   padding: 0px;
+  font-family: "Spectral", serif;
   font-weight: 400;
 }
 html input:focus, html textarea:focus, html select:focus, body input:focus, body textarea:focus, body select:focus {
@@ -89,9 +90,64 @@ html a, body a {
 
 .section1 {
   height: 50vw;
+  width: 100vw;
   background-image: url(../resources/metal.png);
-  margin-top: 50vw;
+  margin-top: 48vw;
   background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+.section1_spacer {
+  height: 10vw;
+  background-color: white;
+  position: relative;
+  z-index: 20;
+}
+.section1_tris {
+  top: 10vw;
+  height: 33vw;
+  width: 30vw;
+  border: solid #0570B8 3px;
+  color: white;
+}
+.section1_tris h1 {
+  height: 1vw;
+  text-align: center;
+}
+.section1_tris.left {
+  display: flex;
+  margin-top: 10vw;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section1_tris.left_top {
+  border: solid red 2px;
+  flex-basis: 1vw;
+  margin-bottom: 3vw;
+}
+.section1_tris.left_top_text {
+  flex-basis: 1vw;
+  margin-top: 2.5vw;
+  height: 1.5vw;
+  text-align: center;
+  font-size: 1vw;
+  vertical-align: middle;
+}
+.section1_tris.left_bottom {
+  border: solid red 2px;
+  background-image: url(../resources/triangles/1.webp);
+  background-size: cover;
+  clip-path: polygon(100% 0%, 0% 0%, 50% 100%);
+}
+.section1_tris.mid {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.section1_tris.right {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
