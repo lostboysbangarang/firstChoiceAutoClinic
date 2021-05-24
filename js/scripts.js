@@ -13,12 +13,12 @@ var timer;
 var j;
 const cars=document.getElementById("slide");
 const poly=document.getElementById("polyShadow")
-var rAF=    window.requestAnimationFrame ||
-            window.mozRequestAnimationFrame ||
-            window.webkitRequestAnimationFrame ||
-            window.msRequestAnimationFrame;
+// var rAF=    window.requestAnimationFrame ||
+//             window.mozRequestAnimationFrame ||
+//             window.webkitRequestAnimationFrame ||
+//             window.msRequestAnimationFrame;
 // var TWEEN = require(["node_modules/@tweenjs/tween.js"]);
-var lolli;
+// var lolli;
 // var pos={x: "100vw", y="0vw"};
 
 
@@ -45,7 +45,7 @@ function slideShow() {
         urls[i]=window.location.origin+window.location.pathname+"/resources/"+urls[i];
         for (j=0; j<1000; j++) {
             kj=j+1;
-            url=""+urls[i]+""+kj+".png";
+            url=""+urls[i]+""+kj+".webp";
             xhr.open("HEAD",url,false);
             xhr.send();
             if (xhr.status !== 404){
@@ -79,8 +79,8 @@ function hug(you, me) {
 
 
 function actualAnimations(element) {
-    console.log("Try");
-    console.log(element);
+    // console.log("Try");
+    // console.log(element);
     Promise.resolve(element)
         .then(prepareAnime)
         .then(playAnime)

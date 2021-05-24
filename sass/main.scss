@@ -47,6 +47,8 @@ html,body {
 
 .sticky {
     z-index: 10;
+    position: sticky;
+    top: 0;
     &_logo {
         margin-top: -.1vw;
         & img {
@@ -112,4 +114,11 @@ html,body {
         background-size: cover;
         background-image: url(../resources/metal.png);
     }
+}
+.section1 {
+    // height: 33.75vw;
+    height: 50vw;
+    background-image: url(../resources/metal.png);
+    margin-top: 50vw;
+    background-size: cover;
 }

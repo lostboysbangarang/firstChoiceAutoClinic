@@ -26,6 +26,8 @@ html a, body a {
 
 .sticky {
   z-index: 10;
+  position: sticky;
+  top: 0;
 }
 .sticky_logo {
   margin-top: -0.1vw;
@@ -83,6 +85,13 @@ html a, body a {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../resources/metal.png);
+}
+
+.section1 {
+  height: 50vw;
+  background-image: url(../resources/metal.png);
+  margin-top: 50vw;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
