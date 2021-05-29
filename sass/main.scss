@@ -85,7 +85,8 @@ html,body {
     height: 52.03125vw;
     width: 100vw;
     // background-color: black;
-    position: absolute;
+    position: relative;
+    margin-top: -10vw;
     z-index: -10;
     top: 0;
     left: 0;
@@ -121,7 +122,9 @@ html,body {
     height: 50vw;
     width: 100vw;
     background-image: url(../resources/metal.png);
-    margin-top: 48vw;
+    // margin-top: 48vw;
+    margin-top: -.5vw;
+    margin-left: -.125vw;
     background-size: cover;
     display: flex;
     justify-content: space-around;
@@ -141,6 +144,7 @@ html,body {
         & h1 {
             height: 1vw;
             text-align: center;
+            font-weight: normal;
             // background-color: yellowgreen;
         } 
         &.left {
@@ -174,9 +178,17 @@ html,body {
         }
         &.mid {
             display: flex;
+            margin-top: 10vw;
             flex-direction: column;
-            background-color: #ffffff;
-            
+            // background-color: #ffffff;
+            &_top {
+                perspective: 10vw;
+                transform-style: preserve-3d;
+                z-index: 50;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         }
         &.right {
             display: flex;

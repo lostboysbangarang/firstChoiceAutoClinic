@@ -60,7 +60,8 @@ html a, body a {
 .intro {
   height: 52.03125vw;
   width: 100vw;
-  position: absolute;
+  position: relative;
+  margin-top: -10vw;
   z-index: -10;
   top: 0;
   left: 0;
@@ -92,7 +93,8 @@ html a, body a {
   height: 50vw;
   width: 100vw;
   background-image: url(../resources/metal.png);
-  margin-top: 48vw;
+  margin-top: -0.5vw;
+  margin-left: -0.125vw;
   background-size: cover;
   display: flex;
   justify-content: space-around;
@@ -113,6 +115,7 @@ html a, body a {
 .section1_tris h1 {
   height: 1vw;
   text-align: center;
+  font-weight: normal;
 }
 .section1_tris.left {
   display: flex;
@@ -141,8 +144,16 @@ html a, body a {
 }
 .section1_tris.mid {
   display: flex;
+  margin-top: 10vw;
   flex-direction: column;
-  background-color: #ffffff;
+}
+.section1_tris.mid_top {
+  perspective: 10vw;
+  transform-style: preserve-3d;
+  z-index: 50;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .section1_tris.right {
   display: flex;
