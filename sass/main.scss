@@ -1,5 +1,6 @@
 $ShadowPoly: rgba(0,0,0,.6);
 $blue: #0570B8;
+$HD: #CC6700;
 
 
 
@@ -117,7 +118,7 @@ html,body {
         background-image: url(../resources/metal.png);
     }
 }
-.section1 {
+.sectionI {
     // height: 33.75vw;
     height: 50vw;
     width: 100vw;
@@ -139,7 +140,7 @@ html,body {
         height: 33vw;
         width: 30vw;
         // margin-top: 10vw;
-        border: solid $blue 1px;
+        // border: solid $blue 1px;
         color: white;
         & h1 {
             height: 1vw;
@@ -154,7 +155,7 @@ html,body {
             // background-color: #ffffff;
             justify-content: space-between;
             &_top {
-                border: solid red 2px;
+                // border: solid red 2px;
                 flex-basis: 1vw;
                 // background-color: white;
                 
@@ -170,7 +171,7 @@ html,body {
                 }
             }
             &_bottom {
-                border: solid red 2px;
+                // border: solid red 2px;
                 background-image: url(../resources/triangles/1.webp);
                 background-size: cover;
                 clip-path: polygon(100% 0%, 0% 0%, 50% 100%);
@@ -191,11 +192,11 @@ html,body {
                 // background-size: 125% auto;
                 // background-position: 50% 60%;
                 background-repeat: no-repeat;
-                border: solid red 2px;
+                // border: solid red 2px;
                 height: 44vw;
             }
             &_bottom {
-                border: solid red 2px;
+                // border: solid red 2px;
                 height: 20vw;
                 
                 &_text {
@@ -212,6 +213,63 @@ html,body {
             display: flex;
             margin-top: 10vw;
             flex-direction: column;
+            &_top {
+                flex-basis: 1vw;
+                // background-color: white;
+                
+                margin-bottom: 3vw;
+                &_text {
+                    flex-basis: 1vw;
+                    margin-top: 2.5vw;
+                    height: 1.5vw;
+                    text-align: center;
+                    font-size: 1vw;
+                    vertical-align: middle;
+                    // background-color: yellowgreen;
+                }
+                
+            }
+            &_bottom {
+                background-image: url(../resources/triangles/2.webp);
+                background-size: cover;
+            }
         }
+    }
+}
+.sectionII {
+    height: 50vw;
+    background-color: $HD;
+    position: relative;
+    // margin-top: -10vw;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    &_blue_I {
+        background-color: $blue;
+        height: 35vw;
+        width: 17vw;
+        position: relative;
+        z-index: 2;
+        top: 5vw;
+        left: 5vw;
+        clip-path: polygon(0% 0%, 100% 0%, 0% 100%)
+    }
+    &_black {
+        background-color: black;
+        position: relative;
+        clip-path: polygon(25% 0%, 95% 0%, 75% 100%, 5% 100%);
+        // margin-top: 25vw;
+        height: 40vw;
+        margin-top: -30vw;
+    }
+    &_blue_II {
+        background-color: $blue;
+        height: 35vw;
+        width: 17vw;
+        position: relative;
+        z-index: 2;
+        top: -35vw;
+        left: 77vw;
+        clip-path: polygon(100% 0%, 0% 100%, 100% 100%)
     }
 }

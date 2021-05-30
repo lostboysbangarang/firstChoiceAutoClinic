@@ -89,7 +89,7 @@ html a, body a {
   background-image: url(../resources/metal.png);
 }
 
-.section1 {
+.sectionI {
   height: 50vw;
   width: 100vw;
   background-image: url(../resources/metal.png);
@@ -99,36 +99,34 @@ html a, body a {
   display: flex;
   justify-content: space-around;
 }
-.section1_spacer {
+.sectionI_spacer {
   height: 10vw;
   background-color: white;
   position: relative;
   z-index: 20;
 }
-.section1_tris {
+.sectionI_tris {
   top: 10vw;
   height: 33vw;
   width: 30vw;
-  border: solid #0570B8 1px;
   color: white;
 }
-.section1_tris h1 {
+.sectionI_tris h1 {
   height: 1vw;
   text-align: center;
   font-weight: normal;
 }
-.section1_tris.left {
+.sectionI_tris.left {
   display: flex;
   margin-top: 10vw;
   flex-direction: column;
   justify-content: space-between;
 }
-.section1_tris.left_top {
-  border: solid red 2px;
+.sectionI_tris.left_top {
   flex-basis: 1vw;
   margin-bottom: 3vw;
 }
-.section1_tris.left_top_text {
+.sectionI_tris.left_top_text {
   flex-basis: 1vw;
   margin-top: 2.5vw;
   height: 1.5vw;
@@ -136,31 +134,28 @@ html a, body a {
   font-size: 1vw;
   vertical-align: middle;
 }
-.section1_tris.left_bottom {
-  border: solid red 2px;
+.sectionI_tris.left_bottom {
   background-image: url(../resources/triangles/1.webp);
   background-size: cover;
   clip-path: polygon(100% 0%, 0% 0%, 50% 100%);
 }
-.section1_tris.mid {
+.sectionI_tris.mid {
   display: flex;
   margin-top: 10vw;
   flex-direction: column;
   justify-content: space-between;
 }
-.section1_tris.mid_top {
+.sectionI_tris.mid_top {
   perspective: 10vw;
   transform-style: preserve-3d;
   z-index: 50;
   background-repeat: no-repeat;
-  border: solid red 2px;
   height: 44vw;
 }
-.section1_tris.mid_bottom {
-  border: solid red 2px;
+.sectionI_tris.mid_bottom {
   height: 20vw;
 }
-.section1_tris.mid_bottom_text {
+.sectionI_tris.mid_bottom_text {
   flex-basis: 1vw;
   margin-top: 2.5vw;
   height: 1.5vw;
@@ -168,10 +163,62 @@ html a, body a {
   font-size: 1vw;
   vertical-align: middle;
 }
-.section1_tris.right {
+.sectionI_tris.right {
   display: flex;
   margin-top: 10vw;
   flex-direction: column;
+}
+.sectionI_tris.right_top {
+  flex-basis: 1vw;
+  margin-bottom: 3vw;
+}
+.sectionI_tris.right_top_text {
+  flex-basis: 1vw;
+  margin-top: 2.5vw;
+  height: 1.5vw;
+  text-align: center;
+  font-size: 1vw;
+  vertical-align: middle;
+}
+.sectionI_tris.right_bottom {
+  background-image: url(../resources/triangles/2.webp);
+  background-size: cover;
+}
+
+.sectionII {
+  height: 50vw;
+  background-color: #CC6700;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.sectionII_blue_I {
+  background-color: #0570B8;
+  height: 35vw;
+  width: 17vw;
+  position: relative;
+  z-index: 2;
+  top: 5vw;
+  left: 5vw;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+.sectionII_black {
+  background-color: black;
+  position: relative;
+  clip-path: polygon(25% 0%, 95% 0%, 75% 100%, 5% 100%);
+  height: 40vw;
+  margin-top: -30vw;
+}
+.sectionII_blue_II {
+  background-color: #0570B8;
+  height: 35vw;
+  width: 17vw;
+  position: relative;
+  z-index: 2;
+  top: -35vw;
+  left: 77vw;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
