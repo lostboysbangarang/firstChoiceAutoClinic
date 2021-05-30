@@ -158,11 +158,20 @@ html a, body a {
 }
 .section1_tris.mid_bottom {
   border: solid red 2px;
+  height: 20vw;
+}
+.section1_tris.mid_bottom_text {
+  flex-basis: 1vw;
+  margin-top: 2.5vw;
+  height: 1.5vw;
+  text-align: center;
+  font-size: 1vw;
+  vertical-align: middle;
 }
 .section1_tris.right {
   display: flex;
+  margin-top: 10vw;
   flex-direction: column;
-  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

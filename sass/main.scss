@@ -196,12 +196,22 @@ html,body {
             }
             &_bottom {
                 border: solid red 2px;
+                height: 20vw;
+                
+                &_text {
+                    flex-basis: 1vw;
+                    margin-top: 2.5vw;
+                    height: 1.5vw;
+                    text-align: center;
+                    font-size: 1vw;
+                    vertical-align: middle;
+                }
             }
         }
         &.right {
             display: flex;
+            margin-top: 10vw;
             flex-direction: column;
-            background-color: #ffffff;
         }
     }
 }
