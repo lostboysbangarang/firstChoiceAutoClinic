@@ -237,16 +237,23 @@ html,body {
     }
 }
 .sectionII {
-    height: 50vw;
+    height: 45vw;
     background-color: $HD;
     position: relative;
     // margin-top: -10vw;
     top: 0;
     z-index: 1;
     overflow: hidden;
+    color: white;
+    & h1 {
+        // height: 3.5vw;
+        text-align: center;
+        font-weight: normal;
+        // background-color: yellowgreen;
+    } 
     &_blue_I {
         background-color: $blue;
-        height: 35vw;
+        height: 30vw;
         width: 17vw;
         position: relative;
         z-index: 2;
@@ -259,16 +266,35 @@ html,body {
         position: relative;
         clip-path: polygon(25% 0%, 95% 0%, 75% 100%, 5% 100%);
         // margin-top: 25vw;
-        height: 40vw;
-        margin-top: -30vw;
+        height: 35vw;
+        margin-top: -25vw;
+        overflow: hidden;
+        & h1 {
+            margin-top: 5vw;
+            font-size: 2.5vw;
+            margin-left: 4vw;
+
+        }
+        &_text {
+            // flex-basis: 1vw;
+            // background-color: yellowgreen;
+            height: 15vw;
+            width: 45vw;
+            margin-left: 28vw;
+            margin-top: 2.5vw;
+            // height: 1.5vw;
+            text-align: center;
+            font-size: 1.75vw;
+            vertical-align: middle;
+        }
     }
     &_blue_II {
         background-color: $blue;
-        height: 35vw;
+        height: 30vw;
         width: 17vw;
         position: relative;
         z-index: 2;
-        top: -35vw;
+        top: -30vw;
         left: 77vw;
         clip-path: polygon(100% 0%, 0% 100%, 100% 100%)
     }
