@@ -241,4 +241,12 @@ html a, body a {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
 }
 
+.sectionIII {
+  background-image: url(../resources/butt.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -0.5vw;
+  height: 33.5vw;
+}
+
 /*# sourceMappingURL=style.css.map */
