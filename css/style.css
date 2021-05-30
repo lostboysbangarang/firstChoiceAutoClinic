@@ -109,7 +109,7 @@ html a, body a {
   top: 10vw;
   height: 33vw;
   width: 30vw;
-  border: solid #0570B8 3px;
+  border: solid #0570B8 1px;
   color: white;
 }
 .section1_tris h1 {
@@ -146,14 +146,18 @@ html a, body a {
   display: flex;
   margin-top: 10vw;
   flex-direction: column;
+  justify-content: space-between;
 }
 .section1_tris.mid_top {
   perspective: 10vw;
   transform-style: preserve-3d;
   z-index: 50;
-  background-size: contain;
-  background-position: center;
   background-repeat: no-repeat;
+  border: solid red 2px;
+  height: 44vw;
+}
+.section1_tris.mid_bottom {
+  border: solid red 2px;
 }
 .section1_tris.right {
   display: flex;

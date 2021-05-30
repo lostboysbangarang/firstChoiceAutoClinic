@@ -139,7 +139,7 @@ html,body {
         height: 33vw;
         width: 30vw;
         // margin-top: 10vw;
-        border: solid $blue 3px;
+        border: solid $blue 1px;
         color: white;
         & h1 {
             height: 1vw;
@@ -181,13 +181,21 @@ html,body {
             margin-top: 10vw;
             flex-direction: column;
             // background-color: #ffffff;
+            justify-content: space-between;
             &_top {
                 perspective: 10vw;
+                // background-image: url(../resources/guns/26.webp);
                 transform-style: preserve-3d;
                 z-index: 50;
-                background-size: contain;
-                background-position: center;
+                // background-size: contain;
+                // background-size: 125% auto;
+                // background-position: 50% 60%;
                 background-repeat: no-repeat;
+                border: solid red 2px;
+                height: 44vw;
+            }
+            &_bottom {
+                border: solid red 2px;
             }
         }
         &.right {
