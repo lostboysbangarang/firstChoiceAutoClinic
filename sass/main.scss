@@ -30,10 +30,8 @@ html,body {
     overflow-x: hidden;
     margin: 0px;
     padding: 0px;
-    // font-family: 'Montserrat', serif;
     font-family: 'Spectral', serif;
     font-weight: 400;
-    // color: $text;
     input:focus, textarea:focus, select:focus {
         outline: none;
     }
@@ -48,7 +46,7 @@ html,body {
 
 
 .sticky {
-    z-index: 10;
+    z-index: 150;
     position: sticky;
     top: 0;
     &_logo {
@@ -70,7 +68,6 @@ html,body {
                 font-size: 1.5vw;
                 background-color: $blue;
                 display: flex;
-                // border: solid white;
                 width: 11.145833333333333333333333333333vw;
                 height: 2.9166666666666666666666666666667vw;
                 margin-right: 1.5625vw;
@@ -85,7 +82,6 @@ html,body {
 .intro {
     height: 52.03125vw;
     width: 100vw;
-    // background-color: black;
     position: relative;
     margin-top: -10vw;
     z-index: -10;
@@ -100,13 +96,10 @@ html,body {
         
     }
     &_slides {
-        // background-image: url(../resources/slideshow/1.png);
         height: 52.03125vw;
         margin-top: -52.03125vw;
-        // margin-left: 50vw;
         position: relative;
         z-index: 9;
-        // opacity: 1;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -119,11 +112,9 @@ html,body {
     }
 }
 .sectionI {
-    // height: 33.75vw;
     height: 50vw;
     width: 100vw;
     background-image: url(../resources/metal.png);
-    // margin-top: 48vw;
     margin-top: -.5vw;
     margin-left: -.125vw;
     background-size: cover;
@@ -139,26 +130,19 @@ html,body {
         top: 10vw;
         height: 33vw;
         width: 30vw;
-        // margin-top: 10vw;
-        // border: solid $blue 1px;
         color: white;
         & h1 {
             height: 1vw;
             text-align: center;
             font-weight: normal;
-            // background-color: yellowgreen;
         } 
         &.left {
             display: flex;
             margin-top: 10vw;
             flex-direction: column;
-            // background-color: #ffffff;
             justify-content: space-between;
             &_top {
-                // border: solid red 2px;
                 flex-basis: 1vw;
-                // background-color: white;
-                
                 margin-bottom: 3vw;
                 &_text {
                     flex-basis: 1vw;
@@ -167,11 +151,9 @@ html,body {
                     text-align: center;
                     font-size: 1vw;
                     vertical-align: middle;
-                    // background-color: yellowgreen;
                 }
             }
             &_bottom {
-                // border: solid red 2px;
                 background-image: url(../resources/triangles/1.webp);
                 background-size: cover;
                 clip-path: polygon(100% 0%, 0% 0%, 50% 100%);
@@ -181,24 +163,16 @@ html,body {
             display: flex;
             margin-top: 10vw;
             flex-direction: column;
-            // background-color: #ffffff;
             justify-content: space-between;
             &_top {
                 perspective: 10vw;
-                // background-image: url(../resources/guns/26.webp);
                 transform-style: preserve-3d;
                 z-index: 50;
-                // background-size: contain;
-                // background-size: 125% auto;
-                // background-position: 50% 60%;
                 background-repeat: no-repeat;
-                // border: solid red 2px;
                 height: 44vw;
             }
             &_bottom {
-                // border: solid red 2px;
                 height: 20vw;
-                
                 &_text {
                     flex-basis: 1vw;
                     margin-top: 2.5vw;
@@ -215,8 +189,6 @@ html,body {
             flex-direction: column;
             &_top {
                 flex-basis: 1vw;
-                // background-color: white;
-                
                 margin-bottom: 3vw;
                 &_text {
                     flex-basis: 1vw;
@@ -225,9 +197,7 @@ html,body {
                     text-align: center;
                     font-size: 1vw;
                     vertical-align: middle;
-                    // background-color: yellowgreen;
                 }
-                
             }
             &_bottom {
                 background-image: url(../resources/triangles/2.webp);
@@ -240,16 +210,13 @@ html,body {
     height: 45vw;
     background-color: $HD;
     position: relative;
-    // margin-top: -10vw;
     top: 0;
     z-index: 1;
     overflow: hidden;
     color: white;
     & h1 {
-        // height: 3.5vw;
         text-align: center;
         font-weight: normal;
-        // background-color: yellowgreen;
     } 
     &_blue_I {
         background-color: $blue;
@@ -265,7 +232,6 @@ html,body {
         background-color: black;
         position: relative;
         clip-path: polygon(25% 0%, 95% 0%, 75% 100%, 5% 100%);
-        // margin-top: 25vw;
         height: 35vw;
         margin-top: -25vw;
         overflow: hidden;
@@ -276,13 +242,10 @@ html,body {
 
         }
         &_text {
-            // flex-basis: 1vw;
-            // background-color: yellowgreen;
             height: 15vw;
             width: 45vw;
             margin-left: 28vw;
             margin-top: 2.5vw;
-            // height: 1.5vw;
             text-align: center;
             font-size: 1.75vw;
             vertical-align: middle;

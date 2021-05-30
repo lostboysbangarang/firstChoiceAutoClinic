@@ -23,14 +23,6 @@ const cars=document.getElementById("slide");
 const poly=document.getElementById("polyShadow");
 const guns=document.getElementById("midrif");
 const secci=document.getElementById("sectI");
-// cont 
-// var rAF=    window.requestAnimationFrame ||
-//             window.mozRequestAnimationFrame ||
-//             window.webkitRequestAnimationFrame ||
-//             window.msRequestAnimationFrame;
-// var TWEEN = require(["node_modules/@tweenjs/tween.js"]);
-// var lolli;
-// var pos={x: "100vw", y="0vw"};
 
 
 
@@ -47,23 +39,11 @@ function afterLoaded() {
     slideShow();
 }
 function fillJson(jsonUrls) {
-    // console.log("\t\t\tFill er up, Jim\n\n");
-    // console.log(jsonUrls.length);
-    // console.log(jsonUrls[R]);
     if (R<jsonUrls.length) {
-        // $.getJSON(""+jsonUrls[R]+"", function(data){
-        //     console.log($.getJSON(""+jsonUrls[R]+""));
-        //     fillErUpJim(data, R);
-        // });
-        // console.log(scripts)
-        // R++;
-        // fillJson(jsonUrls);
         fetch(jsonUrls[R])
             .then(response => response.json())
             .then(data => {
-                // console.log(data.backgroundPos)
                 let pos=data.backgroundPos;
-                // console.log(pos);
                 let size=data.backgroundSize;
             })
             
@@ -83,8 +63,6 @@ function fillErUpJim(paths, r) {
         paths.backgroundSize,
         paths.backgroundPos
     ];
-    // R++;
-    // console.log(scripts[r])
     return scripts;
 }
 
@@ -118,24 +96,12 @@ function slideShow() {
             }
         }
     }
-    // console.log("\t\t\tJSON\n"+jsonSlide.length)
-    // console.log(jsonSlide[1])
     fillJson(jsonSlide[1]);
-    // // for (i=0; i<urls.length; i++) {
-    // //     mePlease=slidePhotos[i];
-    // //     hug(mePlease, please);
-    // // }
-    // console.log(slidePhotos);
-    // timer=setInterval(slideRight(slidePhotos, 0), time);
-    // console.log(slidePhotos);
-    // console.log(slidePhotos[1]);
-    // var timeoutID=vroomvroom(slidePhotos[0], cars, 0);
 }
 function hug(you, me) {
     for (let y=0, len=you.length; y<len; y++){
         me.push(you[y]);
     }
-    // // console.log("Me:     "+me);
     return me;
 }
 
@@ -145,15 +111,11 @@ function hug(you, me) {
 
 
 function actualAnimations(element) {
-    // console.log("Try");
-    // console.log(element);
     Promise.resolve(element)
         .then(prepareAnime)
         .then(playAnime)
 }
 function goBoom(element) {
-    // console.log("Try");
-    // console.log(element);
     Promise.resolve(element)
         .then(prepareAnime)
         .then(playAnime2)
@@ -172,34 +134,23 @@ function animate(element, animation) {
     return new Promise(resolve => animation(element, resolve));
 }
 async function playAnime(element){
-    // console.log("Play");
     await animate(element, anime.slideR);
 }
 async function playAnime2(element){
-    // console.log("Play");
     await animate(element, anime.flippy);
 }
 function prepareAnime(element){
-    // console.log("Prepare");
-    // console.log(element);
-    // console.log(element.style);
     TweenMax.to(element, {clearProps: "animation"});
-    // console.log(element.style);
     return element;
 }
 
 
 
-// var alarm = {
-//     this.timeoutID  =   undefined,
 
-// }
 var jjj=undefined;
 var iii=undefined;
 var lngth;
 async function vroomvroom(urlPath, element, i) {
-    // console.log("URL path");
-    // console.log(urlPath)
     lngth=urlPath.length-1;
     if (jjj) {
         if(typeof urlPath[i] != "undefined") {
@@ -207,10 +158,8 @@ async function vroomvroom(urlPath, element, i) {
             element.style.backgroundImage="url("+urlPath[i]+")";
 
         } else {
-            // console.log("cancelation in progress\t\t\tI:\t\t"+i);
         }
         if (i<lngth) {
-            // console.log("\t\t\tI:\t\t"+i);
             i=i+1;
             timeoutID=setTimeout(vroomvroom, parseFloat(element.dataset.time), urlPath, element, i);
         } else  {
@@ -226,8 +175,6 @@ async function vroomvroom(urlPath, element, i) {
     }
 }
 async function zoomzoom(urlPath, jUrls, element, i) {
-    // console.log("URL path");
-    // console.log(urlPath)
     lngth=urlPath.length-1;
     if (iii) {
         if(typeof urlPath[i] != "undefined") {
@@ -235,16 +182,11 @@ async function zoomzoom(urlPath, jUrls, element, i) {
             fetch(jUrls[i])
             .then(response => response.json())
             .then(data => {
-                // console.log(data.backgroundPos)
                 element.style.backgroundPosition=data.backgroundPos;
-                // console.log(pos);
                 element.style.backgroundSize=data.backgroundSize;
             })
-            // console.log(urlPath[i]);
         }
         if (i<lngth) {
-            // console.log("\t\t\tI:\t\t"+i);
-            // console.log("URL\t\t:"+urlPath.length);
             i=i+1;
             timeoutID=setTimeout(zoomzoom, parseFloat(element.dataset.time), urlPath, jUrls, element, i);
         } else {
@@ -276,44 +218,15 @@ const optsC={
     rootMargin: "0%"
 }
 observer = new IntersectionObserver((entry) => {
-    // console.log("Anotha one");
     window.clearTimeout(timeoutID);
     jjj=true;
     iii=false;
-    // console.log(slidePhotos[0].length);
     var timeoutID=vroomvroom(slidePhotos[0], cars, 0);
-    
-    // if (entry.intersectionRatio > 0) {
-    //     console.log("annotha one");
-    //     if (entry===cars) {
-            
-    //     }
-    //     // async function bangbang(urlPath, element, i) {
-    //     //     if(typeof urlPath[i] != "undefined") {
-        
-    //     //         element.style.backgroundImage="url("+urlPath[i]+")";
-    //     //         // element.style.animation="slideShow"+" "+element.dataset.time+" "+element.dataset.ease+" "+element.dataset.direction;
-    //     //     }
-    //     //     if (i<urlPath[0].length) {
-    //     //         i=i+1;
-    //     //         setTimeout(bangbang, parseFloat(element.dataset.time), urlPath, element, i);
-    //     //     } else {
-    //     //         i=0;
-    //     //         bangbang(urlPath, element, i);
-    //     //     }
-    //     //     actualAnimations(element);
-            
-        
-    //     // }
-    // }
 }, opts);
 observerII = new IntersectionObserver((entry) => {
-    // console.log("We got er Jim");
     var enterSexy=entry[0].isIntersecting;
-    // console.log("\t\t\t"+enterSexy+"");
     if (entry[0].isIntersecting) {
-        // console.log("We got er Jim");
-        // vroomvroom(slidePhotos[0], cars, 1000);
+
         window.clearTimeout(timeoutID);
         jjj=false;
         iii=true;
