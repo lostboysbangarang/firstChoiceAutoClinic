@@ -85,6 +85,7 @@ function slideShow() {
 
             } else if (xhrII.status === 404 && xhr.status !== 404) {
                 slideUrl[j]=url;
+                console.clear();
             }else {
                 j=1001;
                 slidePhotos[i]=slideUrl;
